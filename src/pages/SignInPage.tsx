@@ -6,8 +6,8 @@ export function SignInPage(): JSX.Element {
   const navigate = useNavigate();
   return (
     <SignInForm
-      // Configure according to your settings
-      googleClientId="921088377005-3j1sa10vr6hj86jgmdfh2l53v3mp7lfi.apps.googleusercontent.com"
+      projectId={import.meta.env.VITE_MEDPLUM_PROJECT_ID as string}
+      googleClientId={import.meta.env.VITE_MEDPLUM_GOOGLE_CLIENT_ID as string}
       onSuccess={() => navigate('/')}
     >
       <Logo size={32} />
