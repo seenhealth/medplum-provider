@@ -10,7 +10,7 @@ export function SignInPage(): JSX.Element {
       googleClientId={import.meta.env.VITE_MEDPLUM_GOOGLE_CLIENT_ID as string}
       onSuccess={() => navigate('/')}
     >
-      <Logo size={32} />
+      <Logo size={40} />
       <Title>Sign in to Medplum</Title>
     </SignInForm>
   );
